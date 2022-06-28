@@ -1,0 +1,25 @@
+{
+  "hosting": [
+    {
+      "target": "unitz-biz",
+      "public": "public",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "i18n": {
+        "root": "/"
+      }
+    },
+    {
+      "target": "dev-unitz-biz",
+      "public": "public",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "i18n": {
+        "root": "/"
+      }
+    }
+  ],
+  "emulators": {
+    "hosting": {
+      "port": "9000"
+    }
+  }
+}

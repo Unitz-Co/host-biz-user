@@ -3,12 +3,12 @@ name: app
 on:
   push:
     branches:
-      - "master"
+      - 'master'
 jobs:
   beta:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./ws-app-web/packages/host-app-user
+      working-directory: ./ws-app-web/packages/host-biz-user
     steps:
       - name: setup node v14
         uses: actions/setup-node@v2

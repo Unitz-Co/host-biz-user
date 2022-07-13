@@ -3,12 +3,12 @@ name: Stage build
 on:
   push:
     branches:
-      - "staging"
+      - 'staging'
 jobs:
   staging:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./ws-app-web/packages/host-app-user
+      working-directory: ./ws-app-web/packages/host-biz-user
     steps:
       - name: setup node v14
         uses: actions/setup-node@v2

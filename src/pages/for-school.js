@@ -4,7 +4,6 @@ import { ctx } from '@vl/redata';
 import DIV from '@vl/redata/DIV.macro';
 
 import HomePage from '@uz/unitz-pages-biz/CFHomeForSchool';
-// import FacebookMessenger from '@uz/unitz-components-web/FacebookMessenger';
 import withPageContext from '@uz/unitz-pages/withPageContext';
 import App from '@uz/unitz-app-web/UserApp';
 

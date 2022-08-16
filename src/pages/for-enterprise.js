@@ -3,7 +3,7 @@ import React from 'react';
 import { ctx } from '@vl/redata';
 import DIV from '@vl/redata/DIV.macro';
 
-import HomePage from '@uz/unitz-pages-biz/CFHomeForCenter';
+import HomePage from '@uz/unitz-pages-biz/CFHomeForEnterprise';
 import withPageContext from '@uz/unitz-pages/withPageContext';
 import App from '@uz/unitz-app-web/UserApp';
 
@@ -23,7 +23,7 @@ const HomeIndex = withPageContext((props) => {
             <HomePage />
             {/* <FacebookMessenger /> */}
           </Layout.POS>
-          <Layout.POS name="app-footer">{ctx.apply('ctf.renderSection', { name: 'BizFooterSection' })}</Layout.POS>
+          <Layout.POS name="app-footer">{ctx.apply('ctf.renderSection', { name: 'FooterSection' })}</Layout.POS>
         </DIV>
       </Layout>
     </App>

@@ -18,12 +18,12 @@ const HomeIndex = withPageContext((props) => {
       <Layout location={props.location} PageData={PageData}>
         <DIV>
           <SEO pageData={ctx.apply('ctf.findPage', { name: 'HomeBizForSchool' })} />
-          <Layout.POS name="app-header">{ctx.apply('ctf.renderSection', { name: 'UnitzBizNavbarSection' })}</Layout.POS>
+          <Layout.POS name="app-header">{ctx.apply('ctf.renderSection', { name: 'HomeBizNavbarSection' })}</Layout.POS>
           <Layout.POS name="app-body">
             <HomePage />
             {/* <FacebookMessenger /> */}
           </Layout.POS>
-          <Layout.POS name="app-footer">{ctx.apply('ctf.renderSection', { name: 'FooterSection' })}</Layout.POS>
+          <Layout.POS name="app-footer">{ctx.apply('ctf.renderSection', { name: 'BizFooterSection' })}</Layout.POS>
         </DIV>
       </Layout>
     </App>

@@ -95,6 +95,16 @@ const GbCtfProviderQuery_en = graphql`
         }
         richText {
           raw
+          references {
+            ... on ContentfulAsset {
+              contentful_id
+              __typename
+              title
+              fixed(width: 750) {
+                src
+              }
+            }
+          }
         }
         images {
           fixed(width: 1600) {

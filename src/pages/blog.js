@@ -10,6 +10,7 @@ import Layout from '@uz/unitz-layout-web/LayoutMain';
 import SEO from '@uz/unitz-layout-web/SEO';
 import useRoute from '@vl/hooks/useGbRoute';
 import PageData from '../data/PageDataQuery';
+import _ from 'lodash';
 
 const BlogIndex = withPageContext((props) => {
   const route = useRoute();

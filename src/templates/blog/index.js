@@ -25,9 +25,6 @@ export const component = withPageContext((props) => {
           author {
             name
           }
-          body {
-            body
-          }
           description {
             description
           }
@@ -47,7 +44,15 @@ export const component = withPageContext((props) => {
     <App>
       <Layout location={props.location} PageData={PageData}>
         <DIV>
-          <SEO pageData={ctx.apply('ctf.findPage', { name: _.get(pageContext, 'params.title', '') })} />
+          <SEO
+            pageData={{
+              seoTitle: _.get(pageContext, 'params.title', ''),
+              seoMetaDescription: {
+                seoMetaDescription: _.get(pageContext, 'params.description.description', ''),
+              },
+              siteImage: _.get(pageContext, 'params.heroImage.fluid.src', ''),
+            }}
+          />
           <Layout.POS name="app-header">{ctx.apply('ctf.renderSection', { name: 'HomeBizNavbarSection' })}</Layout.POS>
           <Layout.POS name="app-body">
             <DIV forceCtx>

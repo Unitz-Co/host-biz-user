@@ -2,45 +2,15 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const GbCtfProviderQuery_en = graphql`
   query GbCtfProviderQuery_en {
-    allContentfulHelpCenter(filter: { node_locale: { eq: "en-US" } }) {
+    allContentfulAsset(filter: { node_locale: { eq: "en-US" } }) {
       nodes {
         id: contentful_id
-        name
-        slug
         title
-        sub
-        richText {
-          raw
-          references {
-            ... on ContentfulAsset {
-              contentful_id
-              __typename
-              title
-              fixed(width: 750) {
-                src
-              }
-            }
-          }
+        fixed {
+          src
         }
-        contentfulchildren {
-          id: contentful_id
-          name
-          slug
-          title
-          sub
-          richText {
-            raw
-          }
-          sys {
-            type
-            contentType {
-              sys {
-                type
-                linkType
-                id
-              }
-            }
-          }
+        fluid {
+          src
         }
       }
     }

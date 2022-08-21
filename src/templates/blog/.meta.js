@@ -16,9 +16,6 @@ exports.createPages = withLocale(async function(item, gatsby) {
         author {
           name
         }
-        body {
-          body
-        }
         publishDate
         description {
           description
@@ -27,6 +24,9 @@ exports.createPages = withLocale(async function(item, gatsby) {
           file {
             url
           }
+        }
+        content {
+          raw
         }
         slug
       }

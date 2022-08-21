@@ -26,9 +26,6 @@ const BlogIndex = withPageContext((props) => {
           author {
             name
           }
-          body {
-            body
-          }
           description {
             description
           }
@@ -54,7 +51,11 @@ const BlogIndex = withPageContext((props) => {
     <App>
       <Layout location={props.location} PageData={PageData}>
         <DIV>
-          <SEO pageData={ctx.apply('ctf.findPage', { name: 'HomeUnitzBiz' })} />
+          <SEO
+            pageData={{
+              seoTitle: 'Unitz Biz - Blog',
+            }}
+          />
           <Layout.POS name="app-header">{ctx.apply('ctf.renderSection', { name: 'HomeBizNavbarSection' })}</Layout.POS>
           <Layout.POS name="app-body">
             <DIV forceCtx>

@@ -1,14 +1,16 @@
 const path = require('path');
 const _ = require('lodash');
 const { routeStore } = require('@vl/mod-utils/gatsbyRouteStore');
-const { withLocale } = require('@uz/mod-translations/utils');
+const { withLocale } = require('@uz/mod-translations/utils-biz');
 
 exports.createPages = withLocale(async function(item, gatsby) {
   const localeConfig = this;
   // @update query
   const allNodes = await gatsby.graphql(`
   query pagesQuery {
-    allContentfulPage(filter: { node_locale: { eq: "${localeConfig.get('locale')}"}, targetApp: {eq: "host-biz-user"} }) {
+    allContentfulPage(filter: { node_locale: { eq: "${localeConfig.get(
+      'locale'
+    )}"}, targetApp: {eq: "host-biz-user"} }) {
       nodes {
         id: contentful_id
         name

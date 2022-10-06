@@ -34,7 +34,7 @@ exports.createPages = withLocale(async function(item, gatsby) {
         }
       }
     }
-    allContentfulPage_vi_VN: allContentfulPage(filter: { node_locale: { eq: "vi-VN" } }) {
+    allContentfulPage_de: allContentfulPage(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id
         name
@@ -214,7 +214,7 @@ exports.createPages = withLocale(async function(item, gatsby) {
         }
       }
     }
-    allContentfulSection_vi_VN: allContentfulSection(filter: { node_locale: { eq: "vi-VN" } }) {
+    allContentfulSection_de: allContentfulSection(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id
         name
@@ -360,7 +360,7 @@ exports.createPages = withLocale(async function(item, gatsby) {
         }
       }
     }
-    allContentfulItem_vi_VN: allContentfulItem(filter: { node_locale: { eq: "vi-VN" } }) {
+    allContentfulItem_de: allContentfulItem(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id
         name
@@ -396,102 +396,6 @@ exports.createPages = withLocale(async function(item, gatsby) {
         enhancers {
           id
           name
-        }
-      }
-    }
-    allContentfulCategory(filter: { node_locale: { eq: "en-US" } }) {
-      nodes {
-        id: contentful_id
-        displayName
-        icon
-        longText {
-          longText
-        }
-        slug
-        images {
-          fixed(width: 1600) {
-            width
-            height
-            src
-            srcSet
-          }
-        }
-        image {
-          fixed(width: 1600) {
-            width
-            height
-            src
-            srcSet
-          }
-        }
-        children: chidlren {
-          ... on ContentfulCategory {
-            id: contentful_id
-          }
-        }
-      }
-    }
-    allContentfulCategory_en_US: allContentfulCategory(filter: { node_locale: { eq: "en-US" } }) {
-      nodes {
-        id: contentful_id
-        displayName
-        icon
-        longText {
-          longText
-        }
-        slug
-        images {
-          fixed(width: 1600) {
-            width
-            height
-            src
-            srcSet
-          }
-        }
-        image {
-          fixed(width: 1600) {
-            width
-            height
-            src
-            srcSet
-          }
-        }
-        children: chidlren {
-          ... on ContentfulCategory {
-            id: contentful_id
-          }
-        }
-      }
-    }
-    allContentfulCategory_vi_VN: allContentfulCategory(filter: { node_locale: { eq: "vi-VN" } }) {
-      nodes {
-        id: contentful_id
-        displayName
-        icon
-        longText {
-          longText
-        }
-        slug
-        images {
-          fixed(width: 1600) {
-            width
-            height
-            src
-            srcSet
-          }
-        }
-        image {
-          fixed(width: 1600) {
-            width
-            height
-            src
-            srcSet
-          }
-        }
-        children: chidlren {
-          ... on ContentfulCategory {
-            id: contentful_id
-          }
         }
       }
     }

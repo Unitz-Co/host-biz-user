@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import useGbRouteDe from '@vl/hooks/useGbRouteDe';
+import useGbRouteDe from '@vl/hooks/useGbRoute';
 
 import PageData_de from './locales/de';
 import PageData_en from './locales/en';
@@ -14,6 +14,7 @@ const locales = {
 export const PageData = ({ children }) => {
   // eslint-disable-next-line
   const pageContext = useGbRouteDe().getPageContext();
+
   const lang = _.get(pageContext, 'lang', 'de');
   const Component = _.get(locales, lang);
   if (lang) {

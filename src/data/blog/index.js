@@ -3,7 +3,7 @@
 // import { ctx } from '@vl/redata';
 // import DIV from '@vl/redata/DIV.macro';
 
-// import App from '@uz/unitz-app-web/UserApp';
+// import App from '@uz/unitz-app-web/BizApp';
 // import SEO from '@uz/unitz-layout-web/SEO';
 // import { useStaticQuery, graphql } from 'gatsby';
 // import Layout from '@uz/unitz-layout-web/LayoutMain';

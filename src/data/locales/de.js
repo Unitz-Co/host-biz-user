@@ -1,8 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-const GbCtfProviderQuery_en = graphql`
-  query GbCtfProviderQuery_en {
-    allContentfulAsset(filter: { node_locale: { eq: "en-US" } }) {
+const GbCtfProviderQuery_de = graphql`
+  query GbCtfProviderQuery_de {
+    allContentfulAsset(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id: contentful_id
         title
@@ -14,7 +14,7 @@ const GbCtfProviderQuery_en = graphql`
         }
       }
     }
-    allContentfulPage(filter: { node_locale: { eq: "en-US" } }) {
+    allContentfulPage(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id
         name
@@ -51,7 +51,7 @@ const GbCtfProviderQuery_en = graphql`
         }
       }
     }
-    allContentfulSection(filter: { node_locale: { eq: "en-US" } }) {
+    allContentfulSection(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id
         name
@@ -141,7 +141,7 @@ const GbCtfProviderQuery_en = graphql`
         }
       }
     }
-    allContentfulItem(filter: { node_locale: { eq: "en-US" } }) {
+    allContentfulItem(filter: { node_locale: { eq: "de" } }) {
       nodes {
         id
         name
@@ -204,7 +204,7 @@ const GbCtfProviderQuery_en = graphql`
 
 export const PageData = ({ children }) => {
   // eslint-disable-next-line
-  const res = useStaticQuery(GbCtfProviderQuery_en);
+  const res = useStaticQuery(GbCtfProviderQuery_de);
 
   return children ? children(res) : null;
 };

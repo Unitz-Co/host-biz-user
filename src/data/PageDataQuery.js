@@ -2,12 +2,12 @@ import React from 'react';
 import _ from 'lodash';
 import useRoute from '@vl/hooks/useGbRoute';
 
-import PageData_vi from './locales/vi';
+import PageData_de from './locales/de';
 import PageData_en from './locales/en';
-import 'moment/locale/vi';
+import 'moment/locale/de';
 import 'moment/locale/en-gb';
 const locales = {
-  vi: PageData_vi,
+  de: PageData_de,
   en: PageData_en,
 };
 

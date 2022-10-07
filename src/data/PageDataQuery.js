@@ -1,6 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
-import useGbRouteDe from '@vl/hooks/useGbRoute';
+import useGbRouteDe from '@vl/hooks/useGbRouteDe';
 
 import PageData_de from './locales/de';
 import PageData_en from './locales/en';

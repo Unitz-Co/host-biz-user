@@ -8,7 +8,7 @@
 // import { useStaticQuery, graphql } from 'gatsby';
 // import Layout from '@uz/unitz-layout-web/LayoutMain';
 // import useRoute from '@vl/hooks/useGbRoute';
-// import withPageContext from '@uz/unitz-pages/withPageContext';
+// import withPageContext from '@uz/unitz-pages-biz/withPageContext';
 // import _ from 'lodash';
 // import BlogTemplate from '@uz/unitz-pages-biz/BlogTemplate';
 // import PageData from '../../data/PageDataQuery';

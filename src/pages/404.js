@@ -8,7 +8,7 @@ import SEO from '@uz/unitz-layout-web/SEO';
 
 import Layout from '@uz/unitz-layout-web/LayoutMain';
 import CtfPage404 from '@uz/unitz-pages/404Page';
-import withPageContext from '@uz/unitz-pages/withPageContextDE';
+import withPageContext from '@uz/unitz-pages-biz/withPageContext';
 import PageData from '../data/PageDataQuery';
 
 export const Page404 = withPageContext((props) => {

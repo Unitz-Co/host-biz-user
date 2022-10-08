@@ -7,7 +7,7 @@ import App from '@uz/unitz-app-web/BizApp';
 import SEO from '@uz/unitz-layout-web/SEO';
 
 import Layout from '@uz/unitz-layout-web/LayoutMain';
-import ContentPageLayout from '@uz/unitz-ctf-theme/layouts/ContentPageLayout';
+import ContentPageLayout from '@uz/unitz-ctf-theme/layouts/ContentPageDELayout';
 import useRoute from '@vl/hooks/useGbRouteDe';
 import withPageContext from '@uz/unitz-pages-biz/withPageContext';
 import _ from 'lodash';
@@ -21,6 +21,7 @@ export const component = withPageContext((props) => {
   const pageContext = useRoute().getPageContext();
   const pageLayout = _.get(pageContext, 'params.pageLayout');
   const PageComponent = _.get(PageComponents, pageLayout);
+
   return (
     <App>
       <Layout location={props.location} PageData={PageData}>

@@ -65,6 +65,7 @@
     "react-big-calendar": "^0.35.0",
     "react-cool-dimensions": "^2.0.1",
     "react-countup": "^4.3.3",
+    "react-cookie-consent" : "^8.0.1",
     "react-credit-cards": "^0.8.3",
     "react-dom": "^16.13.1",
     "react-draggable": "^4.4.3",

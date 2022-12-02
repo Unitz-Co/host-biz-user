@@ -6,7 +6,13 @@
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "i18n": {
         "root": "/"
-      }
+      },
+      "rewrites": [
+        {
+          "source": "/files/mod-translations/lang/*.js",
+          "function": "files-remoteConfig-get"
+        }
+      ]
     },
     {
       "target": "dev-unitz-biz",
@@ -14,7 +20,13 @@
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "i18n": {
         "root": "/"
-      }
+      },
+      "rewrites": [
+        {
+          "source": "/files/mod-translations/lang/*.js",
+          "function": "files-remoteConfig-get"
+        }
+      ]
     }
   ],
   "emulators": {
